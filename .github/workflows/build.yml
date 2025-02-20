@@ -38,6 +38,6 @@ jobs:
         run: |
           echo "Run attempt: ${{ matrix.attempt }}"
           npx prettier --write .
-          npm test
+          npx jest test
       
     continue-on-error: false
